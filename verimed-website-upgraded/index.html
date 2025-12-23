@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VeriMed Valuations</title>
+  <meta name="description" content="VeriMed Valuations - Medical Equipment Asset Audits and Valuations for hospitals and clinics. Know your assets, protect your value.">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header / Hero Section -->
+  <header>
+    <img src="verimed-logo.png" alt="VeriMed Valuations Logo">
+    <h1>VeriMed Valuations</h1>
+    <p>Know Your Assets, Protect Your Value</p>
+    <a href="#contact" class="cta-btn">Schedule an Audit</a>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>VeriMed Valuations is an independent clinical engineering service provider specializing in Medical Equipment Asset Audits & Valuations for hospitals, clinics, and healthcare organizations. We help you accurately track, assess, and value your medical equipment for compliance, insurance, and financial reporting.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Medical Equipment Asset Audit</h3>
+          <p>Accurate, verified asset registers including operational status, condition grading, and gap analysis.</p>
+        </div>
+        <div class="service">
+          <h3>Medical Equipment Valuation</h3>
+          <p>Replacement cost, depreciated value, and current market valuation for financial and insurance purposes.</p>
+        </div>
+        <div class="service">
+          <h3>Optional Add-Ons</h3>
+          <p>Barcode / QR tagging, photo documentation, and staff training for asset tracking and management.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Get in touch today to schedule your medical equipment audit and valuation:</p>
+      <p><strong>Phone:</strong> +27 123 456 7890</p>
+      <p><strong>Email:</strong> <a href="mailto:info@verimed.co.za">info@verimed.co.za</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/verimed-valuations">VeriMed LinkedIn</a></p>
+
+      <form action="mailto:info@verimed.co.za" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 VeriMed Valuations. All rights reserved.</p>
+  </footer>
+
+  <!-- JS for Navbar Shadow -->
+  <script>
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      if(window.scrollY > 50){
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+</body>
+</html>
